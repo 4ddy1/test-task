@@ -42,6 +42,7 @@ font-family: "Playfair Display", serif;
 .box-2 {
   flex: 2;
   flex-basis: 30em;
+  align-items: stretch;
 }
 
 .box-3 {
