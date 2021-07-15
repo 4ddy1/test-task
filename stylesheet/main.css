@@ -1,0 +1,51 @@
+/* font-family: "Open Sans", sans-serif;
+font-family: "Playfair Display", serif;
+подключенные шрифты */
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  /* background-color: black;
+  color: brown; */
+}
+
+#box {
+  border: 1px solid black;
+  font-family: "Open Sans", sans-serif;
+}
+
+.box-1 {
+  flex: 1;
+  flex-basis: 5em;
+  font-family: "Playfair Display", serif;
+  font-size: large;
+  display: flex;
+  flex-direction: row;
+  background-color: gray;
+}
+
+.box-1-1 {
+  flex: 1;
+  flex-basis: 10%;
+}
+
+.box-1-2 {
+  flex: 2;
+  flex-basis: 20%;
+}
+
+.box-1-3 {
+  flex: 3;
+  flex-basis: 70%;
+}
+
+.box-2 {
+  flex: 2;
+  flex-basis: 30em;
+}
+
+.box-3 {
+  flex: 3;
+  flex-basis: 10em;
+  background-color: gray;
+}
