@@ -8,7 +8,7 @@ font-family: "Playfair Display", serif;
 }
 
 #box {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -62,6 +62,7 @@ font-family: "Playfair Display", serif;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .column-box-1 {
@@ -69,7 +70,7 @@ font-family: "Playfair Display", serif;
   order: 1;
   max-width: 17%;
   padding: 1em;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
 }
 
 .column-box-2 {
@@ -77,7 +78,7 @@ font-family: "Playfair Display", serif;
   order: 2;
   max-width: 17%;
   padding: 1em;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
 }
 
 .column-box-3 {
@@ -85,7 +86,7 @@ font-family: "Playfair Display", serif;
   order: 3;
   max-width: 17%;
   padding: 1em;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
 }
 
 .column-box-4 {
@@ -93,7 +94,40 @@ font-family: "Playfair Display", serif;
   order: 4;
   max-width: 17%;
   padding: 1em;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
+}
+
+#form_list {
+  list-style-type: none;
+}
+
+#name_form {
+  padding: 0.5em;
+  margin: 0.5em;
+  width: 80%;
+}
+
+#mail_form {
+  padding: 0.5em;
+  margin: 0.5em;
+  width: 80%;
+}
+
+#checkbox_form {
+  margin: 0.5em;
+}
+
+#button_form {
+  padding: 0.5em;
+  margin: 0.5em;
+  width: 90%;
+  background-color: black;
+  color: aliceblue;
+}
+
+#button_form:hover {
+  background-color: brown;
+  color: aliceblue;
 }
 
 .about-box {
