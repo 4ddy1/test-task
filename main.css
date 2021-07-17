@@ -5,18 +5,17 @@ font-family: "Playfair Display", serif;
 .container-1 {
   display: flex;
   flex-direction: column;
-  /* background-color: black;
-  color: brown; */
 }
 
 #box {
   border: 1px solid black;
   font-family: "Open Sans", sans-serif;
+  flex: 1;
 }
 
 .box-1 {
-  flex: 1;
-  flex-basis: 5em;
+  order: 1;
+  flex-basis: 10vh;
   font-family: "Playfair Display", serif;
   font-size: large;
   display: flex;
@@ -25,28 +24,69 @@ font-family: "Playfair Display", serif;
 }
 
 .box-1-1 {
-  flex: 1;
+  order: 1;
   flex-basis: 10%;
 }
 
 .box-1-2 {
-  flex: 2;
+  order: 2;
   flex-basis: 20%;
 }
 
 .box-1-3 {
-  flex: 3;
+  order: 3;
   flex-basis: 70%;
 }
 
 .box-2 {
-  flex: 2;
-  flex-basis: 30em;
+  order: 2;
+  flex-basis: 90vh;
   align-items: stretch;
 }
 
+.backImg {
+  /* object-fit: contain; */
+  height: 90vh;
+  width: 100%;
+}
+
 .box-3 {
-  flex: 3;
-  flex-basis: 10em;
+  order: 3;
+  flex-basis: content;
   background-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box-3-1 {
+  flex: 1;
+  order: 1;
+  max-width: 17%;
+  padding: 1em;
+  flex-wrap: nowrap;
+}
+
+.box-3-2 {
+  flex: 1;
+  order: 2;
+  max-width: 17%;
+  padding: 1em;
+  flex-wrap: nowrap;
+}
+
+.box-3-3 {
+  flex: 1;
+  order: 3;
+  max-width: 17%;
+  padding: 1em;
+  flex-wrap: nowrap;
+}
+
+.box-3-4 {
+  flex: 1;
+  order: 4;
+  max-width: 17%;
+  padding: 1em;
+  flex-wrap: nowrap;
 }
