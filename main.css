@@ -8,9 +8,8 @@ font-family: "Playfair Display", serif;
 }
 
 #box {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-family: "Open Sans", sans-serif;
-  flex: 1;
 }
 
 .box-1 {
@@ -55,11 +54,17 @@ font-family: "Playfair Display", serif;
   flex-basis: content;
   background-color: gray;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.column-box {
+  display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.box-3-1 {
+.column-box-1 {
   flex: 1;
   order: 1;
   max-width: 17%;
@@ -67,7 +72,7 @@ font-family: "Playfair Display", serif;
   flex-wrap: nowrap;
 }
 
-.box-3-2 {
+.column-box-2 {
   flex: 1;
   order: 2;
   max-width: 17%;
@@ -75,7 +80,7 @@ font-family: "Playfair Display", serif;
   flex-wrap: nowrap;
 }
 
-.box-3-3 {
+.column-box-3 {
   flex: 1;
   order: 3;
   max-width: 17%;
@@ -83,10 +88,78 @@ font-family: "Playfair Display", serif;
   flex-wrap: nowrap;
 }
 
-.box-3-4 {
+.column-box-4 {
   flex: 1;
   order: 4;
   max-width: 17%;
   padding: 1em;
   flex-wrap: nowrap;
+}
+
+.about-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-1 {
+  padding: 1em;
+}
+
+.left-2 {
+  padding: 1em;
+}
+
+.left-3 {
+  padding: 1em;
+}
+
+.left-4 {
+  padding: 1em;
+}
+
+.left-5 {
+  padding: 1em;
+}
+
+.left-6 {
+  padding: 1em;
+}
+
+.center {
+  display: flex;
+  justify-content: right;
+}
+
+.center-1 {
+  flex: 1;
+  order: 1;
+  padding: 0.5em;
+  /* max-width: 10%; */
+}
+
+.center-2 {
+  flex: 1;
+  order: 2;
+  padding: 0.5em;
+  /* max-width: 10%; */
+}
+
+.center-3 {
+  flex: 1;
+  order: 3;
+  padding: 0.5em;
+  /* max-width: 10%; */
+}
+
+.right {
+  display: flex;
+  padding: 1em;
+  justify-content: right;
+  max-width: 15%;
 }
