@@ -8,7 +8,7 @@ font-family: "Playfair Display", serif;
 }
 
 #box {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-family: "Open Sans", sans-serif;
 }
 
@@ -46,6 +46,7 @@ font-family: "Playfair Display", serif;
   flex-direction: row;
   height: 25%;
   flex: 1;
+  padding: 0.5em;
 }
 
 .menu-box-1 {
@@ -59,6 +60,11 @@ font-family: "Playfair Display", serif;
 .menu-box-1 li {
   display: inline;
   padding: 0.5em;
+}
+
+.menu-box-1 a {
+  text-decoration: none;
+  color: aliceblue;
 }
 
 .box-2 {
