@@ -73,7 +73,7 @@ font-family: "Playfair Display", serif;
 .drop-menu-company-content {
   display: none;
   position: absolute;
-  right: 1em;
+  right: 2em;
   left: 0.1em;
   background-color: #353436;
   color: #ffffff;
@@ -86,7 +86,7 @@ font-family: "Playfair Display", serif;
 
 .drop-menu-company-content li {
   border-bottom: 0.8px solid #ffffff;
-  width: 6em;
+  width: 6.5em;
 }
 
 .drop-menu-company:hover .drop-menu-company-content {
