@@ -5,10 +5,12 @@ font-family: "Playfair Display", serif;
 .container-1 {
   display: flex;
   flex-direction: column;
+  background-color: #353436;
+  color: #ffffff;
 }
 
 #box {
-  /* border: 1px solid black; */
+  /* border: 1px solid white; */
   font-family: "Open Sans", sans-serif;
 }
 
@@ -19,7 +21,6 @@ font-family: "Playfair Display", serif;
   font-size: large;
   display: flex;
   flex-direction: row;
-  background-color: gray;
 }
 
 .box-1-1 {
@@ -43,12 +44,13 @@ font-family: "Playfair Display", serif;
 }
 
 .menu-box {
-  flex-direction: row;
-  height: 25%;
+  /* flex-direction: row; */
+  height: 30%;
   flex: 1;
-  padding: 0.5em;
+  padding: 1em;
 }
 
+/* .menu-box-1 = horizontal menu  */
 .menu-box-1 {
   margin: 0;
   padding: 0;
@@ -58,13 +60,37 @@ font-family: "Playfair Display", serif;
 }
 
 .menu-box-1 li {
-  display: inline;
+  display: inline-block;
+  position: relative;
   padding: 0.5em;
 }
 
 .menu-box-1 a {
   text-decoration: none;
-  color: aliceblue;
+  color: #ffffff;
+}
+
+.drop-menu-company-content {
+  display: none;
+  position: absolute;
+  right: 1em;
+  left: 0.1em;
+  background-color: #353436;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-top: 0.5em;
+}
+
+.drop-menu-company-content li {
+  border-bottom: 0.8px solid #ffffff;
+  width: 6em;
+}
+
+.drop-menu-company:hover .drop-menu-company-content {
+  display: table;
 }
 
 .box-2 {
@@ -82,10 +108,10 @@ font-family: "Playfair Display", serif;
 .box-3 {
   order: 3;
   flex-basis: content;
-  background-color: gray;
+  /* background-color: rgb(65, 65, 65); */
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  /* color: antiquewhite; */
 }
 
 .column-box {
@@ -149,13 +175,13 @@ font-family: "Playfair Display", serif;
 #button_form {
   padding: 0.5em;
   width: 70%;
-  background-color: black;
-  color: aliceblue;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 #button_form:hover {
   background-color: brown;
-  color: aliceblue;
+  color: #ffffff;
 }
 
 .about-box {
