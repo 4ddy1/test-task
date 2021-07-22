@@ -14,6 +14,18 @@ font-family: "Playfair Display", serif;
   /* font-family: "Open Sans", sans-serif; */
 }
 
+#box a {
+  opacity: 0.7;
+  padding-right: 1em;
+}
+
+.head {
+  height: min-content;
+  text-align: right;
+  padding-right: 1em;
+  font-family: "Open Sans", sans-serif;
+}
+
 .box-1 {
   order: 1;
   flex-basis: 10vh;
@@ -25,9 +37,7 @@ font-family: "Playfair Display", serif;
 }
 
 .box-1-1 {
-  flex: 1;
   order: 1;
-  /* flex-basis: 10%; */
 }
 
 .box-1-2 {
@@ -49,14 +59,14 @@ font-family: "Playfair Display", serif;
   /* flex-direction: row; */
   height: 30%;
   flex: 1;
-  padding: 1em;
+  padding-bottom: 1em;
 }
 
 /* .menu-box-1 = horizontal menu  */
 .menu-box-1 {
   margin: 0;
   padding: 0;
-  padding-right: 1em;
+  padding-right: 0.5em;
   list-style-type: none;
   text-align: right;
 }
@@ -313,17 +323,8 @@ a {
 
 .column-box p {
   font-family: "Open Sans", sans-serif;
+  opacity: 0.7;
 }
-
-/* .column-box p {
-  font-family: OpenSans;
-  font-style: normal;
-  font-stretch: normal;
-}
-
-.column-box h3 {
-  font-family: PlayfairDisplay;
-} */
 
 .column-box-1 {
   flex: 1;
@@ -392,6 +393,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font-family: "Open Sans", sans-serif;
 }
 
 .left {
