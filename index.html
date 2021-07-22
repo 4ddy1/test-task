@@ -12,11 +12,78 @@
       @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Playfair+Display:ital,wght@1,700&display=swap");
     </style>
     <link rel="stylesheet" href="main.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="container-1">
+      <div class="form-popup" id="myForm">
+        <div class="flex-popup">
+          <div class="header-form" id="form-box">
+            <h2>AREA RISERVATA</h2>
+          </div>
+          <div class="forms">
+            <div class="form-1" id="form-box">
+              <h3>ACCEDI</h3>
+              <form action="#" class="form-container-1">
+                <label for="email"><b></b></label>
+                <input type="text" placeholder="E-mail" name="email" required />
+                <label for="password"><b></b></label>
+                <input
+                  type="text"
+                  placeholder="Password"
+                  name="password"
+                  required
+                />
+                <button type="submit" class="ACCEDI" id="btn">ACCEDI</button>
+                <button
+                  type="button"
+                  class="btn cancel"
+                  id="btn"
+                  onclick="closeForm()"
+                >
+                  Close
+                </button>
+              </form>
+            </div>
+            <div class="form-2" id="form-box">
+              <h3>REGISTRATI</h3>
+              <form action="#" class="form-container-2">
+                <label for="nome"><b></b></label>
+                <input type="text" placeholder="Nome" name="nome" required />
+                <label for="cognome"><b></b></label>
+                <input
+                  type="text"
+                  placeholder="Cognome"
+                  name="cognome"
+                  required
+                />
+                <label for="email"><b></b></label>
+                <input type="text" placeholder="E-mail" name="email" required />
+                <label for="password"><b></b></label>
+                <input
+                  type="text"
+                  placeholder="Password"
+                  name="password"
+                  required
+                />
+                <label for="accept"><b></b></label>
+                <input type="checkbox" id="checkbox_form" name="accept" />
+                <a>Acconsento al trattamento dei dati</a>
+                <p>
+                  <label for="accept"><b></b></label>
+                  <input type="checkbox" id="checkbox_form" name="accept" />
+                  <a>Mi iscrivo alla Newsletter</a>
+                </p>
+                <button type="submit" class="btn" id="btn">ACCEDI</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="head" id="box">
-        <a>AREA RISERVATA</a>
+        <button class="open-button" id="btn1" onclick="openForm()">
+          AREA RISERVATA
+        </button>
         <a><img src="images\lock.png" alt="door lock" /></a>
       </div>
       <div class="box-1" id="box">
@@ -142,7 +209,7 @@
                 </li>
                 <li>
                   <label for="accept">
-                    <input type="checkbox" id="checkbox_form" name="accept" />
+                    <input type="checkbox" class="confirm" name="accept" />
                     <a>I agree with conditions</a>
                   </label>
                 </li>

@@ -9,6 +9,110 @@ font-family: "Playfair Display", serif;
   color: #ffffff;
 }
 
+.form-popup {
+  /* контейнер для всей всплывающей формы */
+  display: none;
+  position: absolute;
+  z-index: 4;
+  align-self: center;
+  top: 40%;
+  flex-basis: content;
+  /* justify-self: center; */
+}
+
+.form-popup a {
+  opacity: 0.7;
+}
+
+.flex-popup {
+  /* флексбокс для двух форм и их заглавия */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  background-color: #353436;
+  padding-bottom: 2em;
+  /* padding-right: 4em;
+  padding-left: 4em;
+  padding-top: 0;
+  padding-bottom: 1em; */
+  /* width: 30vw;
+  height: 42vh; */
+}
+
+.flex-popup input {
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+.header-form {
+  text-align: center;
+
+  /* flex: 1; */
+}
+
+.forms {
+  /* флексбокс для двух форм */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* flex: 2; */
+}
+
+/* #form-box {
+  border: 2px solid indigo;
+} */
+
+.form-1 {
+  width: 15em;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.form-2 {
+  width: 15em;
+  margin-right: 5em;
+  /* padding-right: 4em;
+  padding-left: 4em; */
+}
+
+.form-container-1 input[type="text"],
+.form-container-1 input[type="password"],
+.form-container-2 input[type="text"],
+.form-container-2 input[type="password"] {
+  width: 93%;
+}
+
+input:focus {
+  background-color: #ddd;
+}
+
+#btn {
+  background-color: #000000;
+  color: #ffffff;
+  opacity: 0.7;
+  /* margin-bottom: 0.5em; */
+  padding: 0.5em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+#btn:hover {
+  opacity: 1;
+}
+
+#btn1:hover {
+  opacity: 1;
+}
+
+#checkbox_form {
+  opacity: 0.9;
+  margin: 0;
+}
+
+#checkbox_form:hover {
+  opacity: 1;
+}
+
 #box {
   /* border: 1px solid white; */
   /* font-family: "Open Sans", sans-serif; */
@@ -24,6 +128,12 @@ font-family: "Playfair Display", serif;
   text-align: right;
   padding-right: 1em;
   font-family: "Open Sans", sans-serif;
+}
+
+.head button {
+  opacity: 0.7;
+  background-color: #353436;
+  color: #ffffff;
 }
 
 .box-1 {
@@ -366,20 +476,28 @@ a {
 #name_form {
   padding: 0.5em;
   margin-bottom: 0.5em;
+  width: 80%;
 }
 
 #mail_form {
   padding: 0.5em;
   margin-bottom: 0.5em;
+  width: 80%;
 }
 
-#checkbox_form {
-  margin-bottom: 0.5em;
+.confirm {
+  /* чекбокс нижней формы */
+  margin-bottom: 1em;
+  opacity: 0.9;
+}
+
+.confirm:hover {
+  opacity: 1;
 }
 
 #button_form {
   padding: 0.5em;
-  width: 70%;
+  width: 87%;
   background-color: #000000;
   color: #ffffff;
 }
@@ -394,6 +512,7 @@ a {
   flex-direction: row;
   justify-content: space-around;
   font-family: "Open Sans", sans-serif;
+  flex-wrap: wrap;
 }
 
 .left {
