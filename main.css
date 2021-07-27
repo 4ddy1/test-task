@@ -108,6 +108,33 @@ input:focus {
   background-color: #ddd;
 }
 
+.btn_cancel {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.btn_cancel:hover {
+  opacity: 1;
+}
+.btn_cancel:before,
+.btn_cancel:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 40px;
+  width: 2px;
+  background-color: #ffffff;
+}
+.btn_cancel:before {
+  transform: rotate(45deg);
+}
+.btn_cancel:after {
+  transform: rotate(-45deg);
+}
+
 #btn {
   background-color: #000000;
   color: #ffffff;
