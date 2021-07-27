@@ -11,11 +11,35 @@
       @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:ital,wght@1,700&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Playfair+Display:ital,wght@1,700&display=swap");
     </style>
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="slick-1.8.1\slick-1.8.1\slick\slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="slick-1.8.1\slick-1.8.1\slick\slick-theme.css"
+    />
     <link rel="stylesheet" href="main.css" />
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="slick-1.8.1\slick-1.8.1\slick\slick.min.js"
+    ></script>
     <script src="script.js"></script>
   </head>
   <body>
     <div class="container-1">
+      <div id="shadow"></div>
       <div class="form-popup" id="myForm">
         <div class="flex-popup">
           <div class="header-form" id="form-box">
@@ -86,7 +110,7 @@
         </button>
         <a><img src="images\lock.png" alt="door lock" /></a>
       </div>
-      <div class="box-1" id="box">
+      <header class="box-1" id="box">
         <div class="box-1-1" id="box">
           <img src="images\header.png" alt="иконка фирмы" />
         </div>
@@ -113,38 +137,13 @@
             </ul>
           </div>
         </div>
-      </div>
+      </header>
 
-      <div class="box-2" id="box">
-        <!-- <img src="images\regular back.jpg" alt="background" class="backImg" /> -->
-        <div class="all">
-          <input checked type="radio" name="respond" id="desktop" />
-          <article id="slider">
-            <input checked type="radio" name="slider" id="switch1" />
-            <input type="radio" name="slider" id="switch2" />
-            <input type="radio" name="slider" id="switch3" />
-            <input type="radio" name="slider" id="switch4" />
-            <input type="radio" name="slider" id="switch5" />
-            <div id="slides">
-              <div id="overflow">
-                <div class="image">
-                  <article><img src="images\kitchen1.jpg" /></article>
-                  <article><img src="images\kitchen2.jpg" /></article>
-                  <article><img src="images\kitchen3.jpg" /></article>
-                </div>
-              </div>
-            </div>
-            <div id="controls">
-              <label for="switch1"></label>
-              <label for="switch2"></label>
-              <label for="switch3"></label>
-            </div>
-            <div id="active">
-              <label for="switch1"></label>
-              <label for="switch2"></label>
-              <label for="switch3"></label>
-            </div>
-          </article>
+      <main class="box-2" id="box">
+        <div class="slider">
+          <div><img src="images\kitchen1.jpg" alt="" /></div>
+          <div><img src="images\kitchen2.jpg" alt="" /></div>
+          <div><img src="images\kitchen3.jpg" alt="" /></div>
         </div>
         <div class="watermark">
           <h3>LAMPADARI CONTEMPORANEI</h3>
@@ -153,9 +152,9 @@
             eiusmod tempor dolore
           </p>
         </div>
-      </div>
+      </main>
 
-      <div class="box-3" id="box">
+      <footer class="box-3" id="box">
         <div class="column-box">
           <div class="column-box-1" id="box">
             <h3>LAMPADARI MADE IN ITALY</h3>
@@ -257,7 +256,7 @@
           </div>
           <div class="right" id="box"><a>ITA | ENG | DEU | PYC</a></div>
         </div>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
